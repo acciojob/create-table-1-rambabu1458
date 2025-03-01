@@ -15,7 +15,7 @@ function insert_Row() {
 // 
 
 	let table=document.querySelector("#sampleTable");
-	//inserting new row at the top
+//inserting new row at the top
 	let newRow=table.insertRow(0);
 //insert 2 new cells in a row
 	let cell1=newRow.insertCell(0);
