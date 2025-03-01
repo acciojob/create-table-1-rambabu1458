@@ -12,20 +12,15 @@ function insert_Row() {
 	// task.appendChild(tr);
 
 	
-let task = document.querySelector("#sampleTable");
-let tr = document.createElement("tr");
+// 
 
-let td1 = document.createElement("td");
-td1.innerText = "New Cell1";
-tr.appendChild(td1);
-
-let td2 = document.createElement("td");
-td2.innerText = "New Cell2";
-tr.appendChild(td2);
-
-// task.appendChild(tr);
-// task.prepend(tr); //it is adding at top
-
-  // Insert the new row at the top of the table
-task.insertBefore(tr, task.firstChild);
+	let table=document.querySelector("#sampleTable");
+	//inserting new row at the top
+	let newRow=table.insertRow(0);
+//insert 2 new cells in a row
+	let cell1=newRow.insertCell(0);
+	let cell2=newRow.insertCell(1);
+//set content each cell
+	cell1.textContent="New Cell1";
+	cell2.textContent="New Cell2";
 }
