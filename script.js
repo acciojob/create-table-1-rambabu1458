@@ -16,15 +16,15 @@ let task = document.querySelector("#sampleTable");
 let tr = document.createElement("tr");
 
 let td1 = document.createElement("td");
-td1.innerText = "NewCell";
+td1.innerText = "New Cell1";
 tr.appendChild(td1);
 
 let td2 = document.createElement("td");
-td2.innerText = "NewCell";
+td2.innerText = "New Cell2";
 tr.appendChild(td2);
 
 // task.appendChild(tr);
-	task.prepend(tr); //it is adding at top
+task.prepend(tr); //it is adding at top
 
   
 }
