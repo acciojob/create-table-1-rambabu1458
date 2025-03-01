@@ -24,7 +24,8 @@ td2.innerText = "New Cell2";
 tr.appendChild(td2);
 
 // task.appendChild(tr);
-task.prepend(tr); //it is adding at top
+// task.prepend(tr); //it is adding at top
 
-  
+  // Insert the new row at the top of the table
+task.insertBefore(tr, task.firstChild);
 }
